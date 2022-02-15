@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { blogApiInstance } from './apiService';
+import axios from "axios";
+import { blogApiInstance } from "./apiService";
 
 export const getBlogDetails = async (id) => {
   try {
@@ -11,7 +11,7 @@ export const getBlogDetails = async (id) => {
   } catch (error) {
     let err = error?.response?.data ?? error;
 
-    err = typeof err === 'object' ? 'Something Went Wrong' : err;
+    err = typeof err === "object" ? "Something Went Wrong" : err;
 
     return [err, null];
   }
