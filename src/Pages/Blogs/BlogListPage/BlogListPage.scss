@@ -1,0 +1,22 @@
+.main-wrap {
+  width: '100%';
+  .title-txt {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .cards-wrap {
+    display: grid;
+    margin: 2rem 3rem;
+    gap: 2rem;
+    @media screen and (min-width: 850px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: repeat(3, 1fr);
+      // gap: 4rem;
+    }
+  }
+}

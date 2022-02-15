@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.form-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem auto 2.5rem;
+}
+
+.form-wrapper {
+  width: 45vw;
+  max-width: 550px;
+  min-width: 350px;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.2rem 1rem rgba($color: #000000, $alpha: 0.1);
+  padding: 1rem 2rem;
+}
+.link {
+  color: #000;
+}
+.link-text {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.button {
+  min-width: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.button:disabled {
+  cursor: not-allowed;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-page-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

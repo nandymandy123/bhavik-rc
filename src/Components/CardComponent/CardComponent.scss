@@ -1,0 +1,112 @@
+.cards {
+  width: "100%";
+  border-radius: 1rem !important;
+  padding: 1rem;
+  -webkit-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+  box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 500px) {
+    border-radius: 2rem !important;
+  }
+
+  &-content {
+    display: flex;
+    gap: 2rem;
+    @media screen and (min-width: 768px) {
+      gap: 3rem;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 4rem;
+    }
+    .img-part {
+      border-radius: 0.5rem;
+      width: 100px;
+      height: 80px;
+      @media screen and (min-width: 768px) {
+        width: 120px;
+        height: 100px;
+        border-radius: 1rem;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 180px;
+        height: 140px;
+      }
+    }
+    .data-part {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-transform: capitalize;
+      .margin-class {
+        margin-top: auto;
+      }
+      .card-title {
+        font-size: 1rem;
+        color: #0e3088;
+        width: 120px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media screen and (min-width: 768px) {
+          font-weight: 500;
+        }
+        @media screen and (min-width: 1280px) {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+      .card-subtitle {
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #879cff;
+        width: 120px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-self: flex-end;
+        color: gray;
+        font-size: 0.7rem;
+        hr {
+          width: 2px;
+          height: 1rem;
+          margin: 0 0.5rem;
+          background-color: #898989;
+          border: none;
+        }
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    @media screen and (min-width: 768px) {
+      gap: 0.8rem;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 1rem;
+    }
+    .social-btn {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border-radius: 50%;
+      -webkit-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+      -moz-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+      box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.detail-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  .title-txt {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .detail-wrap {
+    width: 310px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    -webkit-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+    box-shadow: 1px 1px 15px 0px rgb(0 0 0 / 10%);
+    @media screen and (min-width: 500px) {
+      width: 500px;
+      border-radius: 2rem;
+    }
+    img {
+      border-radius: 2rem;
+    }
+    .header-txt {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0;
+    }
+    .subheader-txt {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
